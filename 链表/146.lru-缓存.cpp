@@ -20,7 +20,7 @@ class LRUCache {
   }
 
   int get(int key) {
-    Node* node;
+    // Node* node;
     if (cache.find(key) != cache.end()) {
       moveToHead(key);
       return cache[key]->value;
